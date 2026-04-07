@@ -16,6 +16,7 @@ The NGC Code of Conduct outlines the expected behavior and guidelines for partic
 ## Prerequisites
 
 ### Typst
+
 To compile the document, you need to have Typst installed on your system. You can find more information on how install to Typst on your operating system at [Typst's github repository](https://github.com/typst/typst?tab=readme-ov-file#installation).
 
 ### Fonts
@@ -32,17 +33,20 @@ Both fonts are available for free on Google Fonts. You can download and install 
 To compile the document, follow these steps:
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/ngc-code-of-conduct.git
-    cd ngc-code-of-conduct
-    ```
+
+   ```sh
+   git clone https://github.com/next-generation-cartographers/ngc-code-of-conduct.git
+   cd ngc-code-of-conduct
+   ```
 
 2. Compile the Typst document:
-    ```sh
-    typst compile code-of-conduct.typ
-    ```
+
+   ```sh
+   typst compile code-of-conduct.typ
+   ```
 
 3. The compiled PDF will be generated in the same directory.
 
 ## Contributing
+
 We welcome contributions to improve the NGC Code of Conduct. Please fork the repository and submit a pull request with your changes.
