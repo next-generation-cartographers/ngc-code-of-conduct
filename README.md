@@ -2,10 +2,8 @@
 
 This repository contains the Next Generation Cartographer's Code of Conduct document. The document is written in Typst, a modern typesetting system.
 
-> [!WARNING]
-> The code of conduct is still work in progress.
-
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Compiling the Document](#compiling-the-document)

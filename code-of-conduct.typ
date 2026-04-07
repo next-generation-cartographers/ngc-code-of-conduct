@@ -1,16 +1,16 @@
 
-#let body-font = "Source Sans Pro"
+#let body-font = "Source Sans 3"
 #let display-font = "Space Grotesk"
 #let gray = luma(150)
 #let light-gray = luma(240)
 
+#set document(
+  author: "NGC – Next Generation Cartographers",
+  title: "Code of Conduct",
+)
+
 #set page(
   margin: (x: 3.5cm, top: 3cm, bottom: 4cm),
-  background: {
-    set text(font: display-font, weight: "black", size: 10em, tracking: .2em, fill: light-gray)
-    set box(stroke: .05em + light-gray, radius: 1em, inset: (x: .5em, y: .25em))
-    rotate(-45deg, box(upper[Draft]))
-  },
   header: [
     #grid(
       columns: (auto, 1fr, auto),
@@ -21,17 +21,12 @@
       {
         set align(center)
         set text(font: display-font, weight: "black", fill: gray, size: .75em)
-        box(
-          inset: .5em,
-          fill: gray,
-          baseline: .5em,
-          radius: 1em,
-          text(fill: white, tracking: .2em, upper[draft]),
-        )
         h(.5em)
-        [· Code of conduct – Feb, 5th 2024]
-      }, {})
-    ],
+        [Code of conduct – Feb, 5th 2024]
+      },
+      {},
+    )
+  ],
   footer: context [
     #set align(center)
     #set text(0.75em, fill: gray, font: display-font)
@@ -39,7 +34,7 @@
       "1 of 1",
       both: true,
     )
-  ]
+  ],
 )
 
 #set text(font: body-font)
@@ -47,14 +42,14 @@
 #show heading: it => {
   v(1.5em, weak: true)
 
-  set align(if(it.level == 1) {center} else {left})
+  set align(if (it.level == 1) { center } else { left })
   set text(font: display-font)
   it
 }
 
 #align(
   center,
-  image("links/ngc-rgb-logotype-black.svg", width: 2cm)
+  image("links/ngc-rgb-logotype-black.svg", width: 2cm),
 )
 
 = International Cartographic Association\ Working Group – Next Generation Cartographers\ Code of Conduct
